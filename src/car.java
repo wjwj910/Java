@@ -2,7 +2,7 @@
 // 실습1번) 자동차 클래스인 car class 생성(3개의 변수 / 4개의 메소드 포함)
 
 public class car { // car class 선언
-	
+	/*
 	String color; // 자동차의 색상을 문자열 변수 color로 선언
 	int gear; // 기어 단 수를 정수형 변수 gear로 선언
 	int speed; // 자동차 속도를 정수형 변수 speed로 선언
@@ -22,5 +22,24 @@ public class car { // car class 선언
 	
 	public String toString () { // 변경된 speed, gear를 확인하기 위해 문자열 메소드 선언
 	return "Car [color=" + color + ", speed=" + speed + ", gear=" + gear + "]"; // 반환 값을 문자열로 반환
+	}
+	*/
+	
+	private String model;
+	private String color;
+	private int speed;
+	
+	private int id;
+	private static int numbers = 0;
+	
+	public car(String m, String c, int s) {
+		model = m;
+		color = c;
+		speed = s;
+		
+		id = +numbers;
+	}
+	public static int getNumberOfCars() {
+		return numbers;
 	}
 }
